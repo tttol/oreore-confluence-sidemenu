@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Oreore Confluence Sidemenu",
+  "version": "1.0.0",
+  "description": "Customize Confluence sidemenu",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.atlassian.net/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
